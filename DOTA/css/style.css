@@ -1,0 +1,96 @@
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.root{
+    background-image: url(../img/dota-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.root-onsearch{
+    background-image: url(../img/848331.jpg);
+    height: 100%;
+    background-repeat: repeat-y;
+    background-size: cover;
+
+}
+
+.page-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50vh;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.pageWrapper-onSearchClick{
+    padding-top: 10vh;
+}
+
+h1{
+    margin-bottom: 10px;
+}
+
+
+.match-div{
+    display: flex;
+    width: 100%;
+    color: #fff;
+    align-items: baseline;
+    background-color: #1C242D;
+    margin-bottom: 5px;
+    
+}
+
+.match-time , .match-id{
+    margin-right: 20px;
+}
+
+
+.heroes{
+    flex-grow: 1;
+    justify-content: center
+}
+
+.radiantwon{
+    color: #A9CF54;
+}
+.direwon{
+    color:#EA030E;
+}
+
+.dire-heroes , .radiant-heroes, .heroes{
+    display: flex;
+}
+
+.radiant-heroes-img , .dire-heroes-img , .heroimg{
+    width: 35px;
+    height: 35px;
+}
+
+.player-div{
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    justify-content: space-between;
+    color: #A9CF54;
+    background-color: #1C242D
+    
+}
+
+.on-click{
+    padding-top: 10vh;
+    height: 100vh;
+}
+
+
+.score{
+    font-size: 30px;
+    
+}
