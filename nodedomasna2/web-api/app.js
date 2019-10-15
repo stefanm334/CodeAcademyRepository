@@ -23,10 +23,9 @@ app.get('/users', (req, res) => {
 });
 
 app.post('/users', (req, res) => {
-    // let data = req.body
-
-    data = req.query
+    let data = req.body;
+    
     fs.writeFileSync("web-api/users.json" , JSON.stringify(data))
-    res.status(200).send("Success added user")
+    res.status(200).send("Success added user" )
 
 });
