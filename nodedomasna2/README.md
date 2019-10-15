@@ -1,2 +1,0 @@
-# code-academy
-NodeJS project
