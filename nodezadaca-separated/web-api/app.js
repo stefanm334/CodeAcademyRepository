@@ -1,6 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 const users = require('./users/routes');
+const posts = require('./posts/routes')
 const middleware = require('./middlewares/common')
 require('dotenv/config');
 
@@ -12,6 +13,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.use('/users', users);
+app.use('/posts',posts)
 
 app.use(middleware.wrongRoute);
 app.use(middleware.errorHandler);
